@@ -7,12 +7,18 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 function Square(props) {
-    return (
-      <button className="square" onClick={props.onClick}>
-        {props.value}
-      </button>
-    );
-  }
+  return (
+    <button className="square" data-pro={props.value}onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
+}
+
+
+
+// class initialize extends React.Component {
+
+// }
   
   class Board extends React.Component {
     renderSquare(i) {
@@ -95,7 +101,7 @@ function Square(props) {
       const moves = history.map((step, move) => {
         const desc = move ?
           'Go to move #' + move :
-          'Go to game start';
+          'Click to start a new game';
         return (
           <li key={move}>
             <button onClick={() => this.jumpTo(move)}>{desc}</button>

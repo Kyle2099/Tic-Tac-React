@@ -30,3 +30,83 @@
     transform: rotate(360deg);
   }
 }
+
+
+button.square[data-pro="X"] {
+  color: purple;
+  font-size: 70px;
+  
+  }
+  
+  button.square[data-pro="O"] {
+    color: green;
+    font-size: 70px;
+  }
+
+  body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 75px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 50px;
+  text-align: center;
+  width: 75px;
+  border-radius: 20%;
+  float: right;
+
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20%;
+  float: right 50%;
+}
+
+.game-info {
+  margin-left: 50px;
+  background: red;
+  margin-right: 50px;
+  font-size: 25px;
+  float: left;
+  
+  
+}
+.button-square {
+  margin: 10px;
+  float: 40px;
+}
