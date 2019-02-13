@@ -119,7 +119,7 @@ class Game extends React.Component {
     }
 
     return (
-      <div>
+      <div class="a">
         <h1>
           Tic-Tac-Toe!
         </h1>
