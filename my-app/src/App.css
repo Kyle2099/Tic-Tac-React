@@ -35,12 +35,13 @@
 button.square[data-pro="X"] {
   color: purple;
   font-size: 70px;
-  
   }
   
   button.square[data-pro="O"] {
     color: green;
     font-size: 70px;
+
+
   }
 
   body {
@@ -68,15 +69,12 @@ ul {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 34px;
-  height: 75px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 50px;
+  height: 150px;
   text-align: center;
-  width: 75px;
+  width: 150px;
   border-radius: 20%;
   float: right;
 
@@ -91,6 +89,8 @@ ul {
 }
 
 .game {
+  margin-top: 15%;
+  margin-left: 10%;
   display: flex;
   flex-direction: row;
   border-radius: 20%;
@@ -109,4 +109,15 @@ ul {
 .button-square {
   margin: 10px;
   float: 40px;
+  
+}
+
+
+h1 {
+  margin: 5%;
+  margin-left: 13%;
+  margin-right: 50%;
+ background-color: blue;
+  color: red;
+  text-align: center
 }
